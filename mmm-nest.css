@@ -1,0 +1,151 @@
+.mmm-nest .dial {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mmm-nest .dial.away .dial__ico__leaf {
+  visibility: hidden;
+}
+.mmm-nest .dial.away .dial__lbl--target {
+  visibility: hidden;
+}
+.mmm-nest .dial.away .dial__lbl--target--half {
+  visibility: hidden;
+}
+.mmm-nest .dial.away .dial__lbl--away {
+  opacity: 1;
+}
+.mmm-nest .dial .dial__shape {
+  transition: fill 0.5s;
+}
+.mmm-nest .dial__ico__leaf {
+  fill: #13eb13;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+.mmm-nest .dial.has-leaf .dial__ico__leaf {
+  display: block;
+  opacity: 1;
+  pointer-events: initial;
+}
+.mmm-nest .dial__editableIndicator {
+  fill: white;
+  fill-rule: evenodd;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.mmm-nest .dial--edit .dial__editableIndicator {
+  opacity: 1;
+}
+.mmm-nest .dial--state--off .dial__shape {
+  fill: #111;
+}
+.mmm-nest .dial--state--heating .dial__shape {
+  fill: #e36304;
+}
+.mmm-nest .dial--state--cooling .dial__shape {
+  fill: #007af1;
+}
+.mmm-nest .dial__ticks path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+.mmm-nest .dial__ticks path.active {
+  fill: rgba(255, 255, 255, 0.8);
+}
+.mmm-nest .dial text {
+  fill: white;
+  text-anchor: middle;
+  font-family: Helvetica, sans-serif;
+  alignment-baseline: central;
+}
+.mmm-nest .dial__lbl--target {
+  font-size: 120px;
+  font-weight: normal;
+}
+
+.mmm-nest .dial__lbl--name {
+  font-size: 30px;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.mmm-nest .dial__lbl--name.dial__medium {
+  font-size: 24px;
+}
+
+.mmm-nest .dial__lbl--name.dial__small {
+  font-size: 20px;
+}
+
+.mmm-nest .dial__lbl--name.dial__mini {
+  font-size: 10px;
+  opacity: 0.65;
+}
+
+.mmm-nest .dial__lbl--target.dial__medium {
+  font-size: 90px;
+}
+
+.mmm-nest .dial__lbl--target.dial__small {
+  font-size: 45px;
+}
+
+.mmm-nest .dial__lbl--target.dial__mini {
+  font-size: 30px;
+}
+
+.mmm-nest .dial__lbl--target--half {
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.mmm-nest .dial__lbl--target--half.shown {
+  opacity: 1;
+  transition: opacity 0s;
+}
+.mmm-nest .dial__lbl--ambient {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mmm-nest .dial__lbl--ambient.dial__medium {
+  font-size: 20px;
+}
+
+.mmm-nest .dial__lbl--ambient.dial__small {
+  font-size: 16px;
+}
+
+.mmm-nest .dial__lbl--ambient.dial__mini {
+  font-size: 10px;
+}
+
+.mmm-nest .dial__lbl--away {
+  font-size: 72px;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mmm-nest .thermostat {
+  display: inline-block;
+}
+
+.mmm-nest .thermostat__large {
+  padding: 0 30px;
+}
+
+.mmm-nest .thermostat__medium {
+  padding: 0 20px;
+}
+
+.mmm-nest .thermostat__small {
+  padding: 0 10px;
+}
+
+.mmm-nest .thermostat__mini {
+  padding: 0 5px;
+}
